@@ -1,0 +1,40 @@
+.social-icons {
+  margin: 0;
+  padding: 0;
+
+  .list-inline-item:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #0d6efd;
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    i {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  a {
+    &:hover {
+      color: darken(#0d6efd, 10%) !important;
+    }
+  }
+}
