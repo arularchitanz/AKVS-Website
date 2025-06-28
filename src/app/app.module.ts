@@ -2,7 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+<<<<<<< HEAD
 import { HttpClientModule } from '@angular/common/http';
+=======
+>>>>>>> 1b85c35bbb8566e9421bf323cbdb00a73a1b8de6
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,8 +19,12 @@ import { EmailService } from './components/services/email.service';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
+<<<<<<< HEAD
     ReactiveFormsModule,
     HttpClientModule
+=======
+    ReactiveFormsModule
+>>>>>>> 1b85c35bbb8566e9421bf323cbdb00a73a1b8de6
   ],
   declarations: [
     AppComponent,
