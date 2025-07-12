@@ -17,7 +17,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   isSubmitting = false;
   successMessage = '';
 
-<<<<<<< HEAD
   events: any[] = [
     {
       title: 'Memorial Launch',
@@ -71,8 +70,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     return this.events.filter(event => event.type === 'past');
   }
 
-=======
->>>>>>> 1b85c35bbb8566e9421bf323cbdb00a73a1b8de6
   constructor(
     private emailService: EmailService,
     private fb: FormBuilder
@@ -162,7 +159,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   async onSubmit() {
-<<<<<<< HEAD
     if (this.contactForm.valid) {
     this.isSubmitting = true;
     try {
@@ -180,32 +176,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
         }, 5000);
     } catch (error) {
         console.error('Error sending email:', error);
-=======
-    if (this.contactForm.invalid) {
-      return;
-    }
-
-    this.isSubmitting = true;
-    try {
-      const formData = this.contactForm.value;
-      await this.emailService.sendContactEmail(
-        formData.name,
-        formData.email,
-        formData.message,
-        formData.phone
-      );
-      this.successMessage = 'Message sent successfully!';
-      this.contactForm.reset();
-    } catch (error) {
-      console.error('Error:', error);
-      this.successMessage = 'Failed to send message. Please try again.';
->>>>>>> 1b85c35bbb8566e9421bf323cbdb00a73a1b8de6
     } finally {
       this.isSubmitting = false;
     }
   }
 }
-<<<<<<< HEAD
 }
-=======
->>>>>>> 1b85c35bbb8566e9421bf323cbdb00a73a1b8de6
