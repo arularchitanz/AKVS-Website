@@ -20,45 +20,45 @@ export class HomeComponent implements OnInit, AfterViewInit {
   events: any[] = [
     {
       title: 'Memorial Launch',
-      date: new Date('2024-09-01'),
+      date: new Date('2016-07-01'),
       description: 'Successful inauguration of new educational initiatives and programs.',
       image: 'assets/images/MemorialDay.jpg',
-      type: 'current'
+      type: 'past'
     },
     {
       title: 'Christmas Celebration',
-      date: new Date('2024-12-25'),
+      date: new Date('2015-12-25'),
       description: 'Community service and celebration bringing joy to underprivileged children.',
       image: 'assets/images/ChristmasCelebration.jpg',
-      type: 'current'
+      type: 'past'
     },
     {
       title: 'Blood Donation Camp',
-      date: new Date('2024-10-20'),
+      date: new Date('2016-10-20'),
       description: 'Successfully conducted blood donation camp with over 500 donors.',
       image: 'assets/images/BloodDonation.jpg',
-      type: 'current'
+      type: 'past'
     },
     {
       title: 'Diwali Celebration',
-      date: new Date('2023-10-15'),
+      date: new Date('2018-11-15'),
       description: 'Annual Diwali celebration with cultural programs and activities.',
       image: 'assets/images/DiwaliCelebration.jpg',
-      type: 'past'
+      type: 'current'
     },
     {
       title: 'National Day Observance Ceremony',
-      date: new Date('2023-12-25'),
+      date: new Date('2018-08-25'),
       description: 'Annual National Day ceremony celebrating patriotism and national unity.',
       image: 'assets/images/NationalDayObservanceCeremony.jpg',
-      type: 'past'
+      type: 'current'
     },
     {
       title: 'Inter Religious Harmony',
-      date: new Date('2023-08-25'),
+      date: new Date('2017-03-25'),
       description: 'Annual Inter Religious Harmony event fostering unity and understanding.',
       image: 'assets/images/InterReligiousHarmony.jpg',
-      type: 'past'
+      type: 'current'
     }
   ];
 

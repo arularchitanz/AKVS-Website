@@ -18,6 +18,7 @@
   }
 }
 
+
 // Section Backgrounds
 .section-bg {
   background-size: cover;
@@ -354,19 +355,107 @@
 }
 
 // Team Section
-.team-card {
-  img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: 5px solid #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.team {
+  // background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  padding: 4rem 0;
+  
+  .team-card {
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 5px solid #fff;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+  
+  .team-member {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+      
+      .team-image img {
+        transform: scale(1.05);
+      }
+    }
+    
+    .team-image {
+      overflow: hidden;
+      
+      img {
+        transition: transform 0.5s ease;
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+    
+    h4 {
+      color: #2a5298;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+    
+    p {
+      color: #6c757d !important;
+      font-size: 0.9rem;
+    }
+  }
+  
+  .section-title {
+    color: #fff !important;
+    position: relative;
+    margin-bottom: 3rem;
+    
+    &::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 3px;
+      background: #fff;
+      margin: 15px auto 0;
+    }
   }
 }
-.img-fluid{
-  height: 320px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
+
+// Responsive adjustments
+@media (max-width: 991.98px) {
+  .team {
+    .team-member {
+      margin-bottom: 1.5rem;
+      
+      .team-image img {
+        height: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .team {
+    padding: 3rem 0;
+    
+    .team-member {
+      max-width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+      
+      .team-image img {
+        height: 300px;
+      }
+    }
+  }
 }
 
 // Events Section Styles
